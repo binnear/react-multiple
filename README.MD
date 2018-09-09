@@ -70,12 +70,13 @@ npm run build
 
 #### 三. 功能说明
 
-1. 已引入UI库`antd-design-mobile `，工具库`lodash`，并作按需打包处理；
-2. 网络请求引入`axios`，前端模拟数据引入`mock`，react手机端tap事件处理引入`react-tap-event-plugin`；
-3. eslint代码检查；
-4. 每个页面可配置的title，keyword，description，cnd资源引入
-5. 已作手机端适配，以750设计稿为准，设计稿1px对应页面为0.01rem；
-6. 引入store，对应页面分别配置，若不需要可删除。
+1. eslint代码检查，css Module；
+2. 已引入UI库`antd-design-mobile `，工具库`lodash`，并作按需打包处理；
+3. 网络请求引入`axios`，前端模拟数据引入`mock;
+4. `react-tap-event-plugin`，处理手机端tap事件；
+5. 引入store，对应页面分别配置，若不需要可删除。
+6. 每个页面可配置的title，keyword，description，cnd资源引入
+7. 已作手机端适配，以750设计稿为准，设计稿1px对应页面为0.01rem；
 
 若项目为pc端，则删除index.html中的如下代码
 
