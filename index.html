@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>
+    <%= htmlWebpackPlugin.options.title %>
+  </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+  <meta name="format-detection" content="telephone=no" />
+  <meta name="baidu-site-verification" content="I5UidFlMBr" />
+  <meta name="applicable-device" content="mobile">
+  <link rel="canonical" href="https://life.vanke.com/">
+  <link rel="apple-touch-icon-precomposed" href="./resource/shoucang.png">
+</head>
+
+<body>
+  <script type="text/javascript">
+    const resize = (e) => {
+      const screenWidth = window.screen.availWidth;
+      const size = screenWidth / (750 / 100);
+      document.documentElement.style.fontSize = size + 'px'
+    }
+    window.onresize = resize
+    resize()
+  </script>
+
+  <% for (var i = 0; i < htmlWebpackPlugin.options.extra.length;i++) { %>
+    <script type="text/javascript" src="<%=htmlWebpackPlugin.options.extra[i] %>"></script>
+    <% } %>
+      <div id="app"></div>
+</body>
+
+</html>
