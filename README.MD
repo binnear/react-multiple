@@ -58,13 +58,13 @@ mall-wap
 #### 二. 使用说明
 
 开发环境
-```
+```bash
 npm install
 npm run dev
 ```
 
 生产环境
-```
+```bash
 npm run build
 ```
 
@@ -80,14 +80,14 @@ npm run build
 
 ```js
 <script type="text/javascript">
-    const resize = (e) => {
-      const screenWidth = window.screen.availWidth;
-      const size = screenWidth / (750 / 100);
-      document.documentElement.style.fontSize = size + 'px'
-    }
-    window.onresize = resize
-    resize()
-  </script>
+  const resize = (e) => {
+    const screenWidth = window.screen.availWidth;
+    const size = screenWidth / (750 / 100);
+    document.documentElement.style.fontSize = size + 'px'
+  }
+  window.onresize = resize
+  resize()
+</script>
 ```
 
 更换`antd-design-mobile`库为你喜欢的库即可。
