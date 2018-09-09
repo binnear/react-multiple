@@ -1,4 +1,4 @@
-# webpack4+react多页面环境搭建
+# webpack4+react多页面环境搭建，开箱即用
 
 #### 一. 目录结构
 
@@ -75,6 +75,7 @@ npm run build
 3. eslint代码检查；
 4. 每个页面可配置的title，keyword，description，cnd资源引入
 5. 已作手机端适配，以750设计稿为准，设计稿1px对应页面为0.01rem；
+6. 引入store，对应页面分别配置，若不需要可删除。
 
 若项目为pc端，则删除index.html中的如下代码
 
