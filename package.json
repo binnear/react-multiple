@@ -1,14 +1,14 @@
 {
-  "name": "vanke-life-mall",
+  "name": "react-multiple",
   "version": "1.0.0",
-  "description": "mall",
+  "description": "react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "node config/entry.conf.js && webpack-dev-server --devtool source-map --config config/webpack/webpack.dev.conf.js",
     "build": "node config/entry.conf.js && cross-env BABEL_ENV=production webpack --config config/webpack/webpack.prod.conf.js"
   },
-  "author": "vanke",
+  "author": "binnear",
   "license": "ISC",
   "dependencies": {
     "antd-mobile": "^2.2.2",
