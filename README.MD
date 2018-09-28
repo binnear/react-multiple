@@ -82,13 +82,13 @@ npm run build
 
 ```js
 <script type="text/javascript">
-  const resize = (e) => {
-    const screenWidth = window.screen.availWidth;
-    const size = screenWidth / (750 / 100);
-    document.documentElement.style.fontSize = size + 'px'
-  }
-  window.onresize = resize
-  resize()
+  function resize(e) {
+     var screenWidth = window.innerWidth ? window.innerWidth : document.body.clientWidth;
+     var size = screenWidth / (750 / 100);
+     document.documentElement.style.fontSize = size + 'px'
+   }
+   window.onresize = resize
+   resize()
 </script>
 ```
 
