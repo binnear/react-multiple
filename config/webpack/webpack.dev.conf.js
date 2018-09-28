@@ -1,3 +1,4 @@
+const opn = require('opn');
 const path = require("path");
 const webpack = require('webpack');
 const merge = require('webpack-merge');
@@ -80,11 +81,16 @@ let config = merge(baseWebpackConfig, {
   ],
   devServer: {
     host: '0.0.0.0',
-    port: 4000,
+    port: 4001,
     hot: true,
     inline: true,
     contentBase: path.resolve(webpackFile.devDirectory),
-    historyApiFallback: true,
+    historyApiFallback: {
+      rewrites: [
+        { from: /^\/$/, to: '/index.html' },
+        { from: /^\/search/, to: '/search.html' },
+      ]
+    },
     disableHostCheck: true,
     stats: "errors-only",
     proxy: [
